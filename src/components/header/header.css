@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+h1 {
+    font-weight: lighter;
+    text-align: center;
+    margin-top:1%;
+}
+.header-btns {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top:1%;
+    border-bottom:0.1em solid #005280;
+}
+.header-btns a{
+    height: auto;
+    width: 12.5%;
+    text-align: center;
+    padding:1.5% 1%;
+    text-decoration: none;
+    color:#005280;
+}
+.header-btns a:hover {
+    background-color: #EAF3FF;
+    cursor:pointer;
+}

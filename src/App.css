@@ -1,0 +1,35 @@
+.bg-color {
+   background-color: #F7FAFC; 
+}
+.main-cont-view {
+    width: 80%;
+    height: auto;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    gap:1.5%;
+    /* background-color: #F7FAFC; */
+    
+}
+
+p {
+    text-align: center;
+    font-size: small;
+    margin:0;
+    color:lightslategray;
+}
+
+.cont-left {
+    width: 30%;
+    height: 100%; /*change to fit content*/
+    gap:1%;
+}
+.cont-right {
+    width: 70%;
+    height: 100%; /*change to fit content*/
+}
+
+.card-title {
+    color:#005280;
+}

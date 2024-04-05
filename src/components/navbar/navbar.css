@@ -1,0 +1,34 @@
+.navbar-top {
+    width: 100%;
+    height: 6vh;
+    padding: 0.2% 1%;
+    display: flex;
+    background-color: #005280;
+    color:white;
+}
+.nav-logo {
+    width: 5%;
+    height: 100%;
+}
+.nav-logo img, .nav-menu img {
+    max-height: 100%;
+    max-width: auto;
+    object-fit: contain;
+}
+.nav-title {
+    width: 90%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-title h5{
+    margin:0;
+}
+.nav-menu {
+    width: 5%;
+    height: 100%;
+    padding:0.5%;
+    display: flex;
+    justify-content: flex-end;
+}
