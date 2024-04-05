@@ -1,4 +1,5 @@
 import './quicklinks.css'
+import {menu_confirmation} from '../../../credentials.js'
 
 function Quicklinks() {
     return (
@@ -8,7 +9,7 @@ function Quicklinks() {
                     <div className="card-body">
                         <h5 className="card-title">Quick Access</h5>
                         <a href="https://atengine.mx" target='_blank' className="card-link">AT Engine Official Website</a>
-                        <a href="https://atenginemexico.sharepoint.com/:x:/g/Ea-dpgeysJVJrQ2YNLtXxEMBIG5xWKMKgA_Sl8KEOBEEAA?e=oyGNIE" target='_blank' className="card-link">Weekly menu confirmation</a>
+                        <a href={menu_confirmation} target='_blank' className="card-link">Weekly menu confirmation</a>
                         <a href="http://172.16.5.237/PMO/directory" target='_blank' className="card-link">Part Number Directory</a>
                         <a href="https://itopatem.on.spiceworks.com/portal/registrations" target='_blank' className="card-link">Create an IT Ticket</a>
                         <a href="#" target='_blank' className="card-link">Plant Layout</a>

@@ -8,6 +8,7 @@ import Carousel from './components/carousel/carousel'
 import Indicators from './components/indicators/indicators'
 import './App.css'
 
+
 function App() {
   const [count, setCount] = useState(0)
 

@@ -3,6 +3,7 @@ import 'react-slideshow-image/dist/styles.css'
 import { Slide } from 'react-slideshow-image';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import api_url from '../../../credentials.js';
 
 function Carousel() {
     const [imageUrls, setImageUrls] = useState([]);
@@ -10,7 +11,7 @@ function Carousel() {
 
     const getImages = async () => {
         try {
-            const resp = await axios.get('http://172.16.5.237:3001/images');
+            const resp = await api_url.get('images');
             setImageUrls(resp.data);
         } catch (error) {
             setError(error.message);
@@ -30,8 +31,7 @@ function Carousel() {
             <Slide>
                 {imageUrls.map((imageUrl, index) => (
                     <div key={index} className="each-slide-effect"
-                    style={{'backgroundImage': `url(${'http://172.16.5.237:3001' + imageUrl})`}}>
-                        {/* <img src={'http://172.16.5.237:3001' + imageUrl} alt={`Slide ${index + 1}`} /> */}
+                    style={{'backgroundImage': `url(${'test' + imageUrl})`}}>
                     </div>
                 ))}
             </Slide>
@@ -42,7 +42,7 @@ function Carousel() {
 export default Carousel;
 
 // useEffect(() => {
-//     fetch('http://172.16.5.237:3001/images', {
+//     fetch('url', {
 //         headers:{
 //             accept: 'application/json'
 //           }
@@ -58,7 +58,7 @@ export default Carousel;
 // }, []);
 
 // const GetData = async () => {
-//     const response = await axios.get('http://172.16.5.237:8090/orders');
+//     const response = await axios.get('some url');
 //     console.log(response.data.Autor)
 //     return response.data
 // }
